@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
 // Замените на свой токен Telegram
-const TELEGRAM_TOKEN = 'ВАШ_ТОКЕН';
+const TELEGRAM_TOKEN = '8414847612:AAH0hoeY-dxrFoZlZGJf4yKJXnqKhsbrMx8';
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
 // GitHub raw file fetcher
