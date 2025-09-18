@@ -1,0 +1,11 @@
+{
+  "name": "bot_md",
+  "version": "1.0.0",
+  "description": "Цель: бот, который берет файлы из GitHub (например README.md), конвертирует в формат, совместимый с Telegram (MarkdownV2 или HTML) и публикует в чате/группе.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
