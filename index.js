@@ -7,7 +7,7 @@ const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
 // GitHub raw file fetcher
 async function fetchGithubFile(owner, repo, file = 'README.md', branch = 'main') {
-  const url = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${file}`;
+  const url = `https://github.com/${file}`;
   try {
     const res = await axios.get(url);
     return res.data;
