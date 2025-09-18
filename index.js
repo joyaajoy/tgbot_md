@@ -2,12 +2,12 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
 // Замените на свой токен Telegram
-const TELEGRAM_TOKEN = '8414847612:AAH0hoeY-dxrFoZlZGJf4yKJXnqKhsbrMx8';
+const TELEGRAM_TOKEN = 'ВАШ_ТОКЕН';
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
 // GitHub raw file fetcher
 async function fetchGithubFile(owner, repo, file = 'README.md', branch = 'main') {
-  const url = `https://github.com/${file}`;
+  const url = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${file}`;
   try {
     const res = await axios.get(url);
     return res.data;
