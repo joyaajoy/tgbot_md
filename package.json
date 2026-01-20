@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Цель: бот, который берет файлы из GitHub (например README.md), конвертирует в формат, совместимый с Telegram (MarkdownV2 или HTML) и публикует в чате/группе.",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": {
+    "tgbot_md": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:win": "pkg . --targets node18-win-x64 --output dist/tgbot_md.exe"
